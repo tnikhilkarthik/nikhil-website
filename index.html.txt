@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nikhil Karthik T</title>
+
+    <style>
+        body{
+            text-align:center;
+            font-family: Arial, sans-serif;
+            margin-top:100px;
+        }
+
+        button{
+            padding:10px 20px;
+            margin:10px;
+            font-size:16px;
+            cursor:pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>Nikhil Karthik T</h1>
+
+<button onclick="singleClick()">Click Me</button>
+
+<button ondblclick="doubleClick()">Click Twice</button>
+
+<script>
+function singleClick(){
+    alert("You clicked once!");
+}
+
+function doubleClick(){
+    alert("You double clicked!");
+}
+</script>
+
+</body>
+</html>
