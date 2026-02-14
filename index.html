@@ -1,31 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Nikhil Karthik T</title>
+<title>Nikhil Karthik T</title>
 
-    <style>
-        body{
-            text-align:center;
-            font-family: Arial, sans-serif;
-            margin-top:100px;
-        }
+<style>
+/* Page background */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 
-        button{
-            padding:10px 20px;
-            margin:10px;
-            font-size:16px;
-            cursor:pointer;
-        }
-    </style>
+/* Main box */
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 300px;
+}
+
+/* Name */
+h1 {
+    margin-bottom: 10px;
+}
+
+/* Greeting */
+.greet {
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* Button box */
+.button-box {
+    border: 2px solid #ddd;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Buttons */
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+</style>
+
 </head>
 
 <body>
 
+<div class="container">
+
 <h1>Nikhil Karthik T</h1>
+<p class="greet">Hi! 👋 Welcome to my webpage</p>
 
-<button onclick="singleClick()">Click Me</button>
+<div class="button-box">
+    <button onclick="singleClick()">Click Me</button>
+    <button ondblclick="doubleClick()">Click Twice</button>
+</div>
 
-<button ondblclick="doubleClick()">Click Twice</button>
+</div>
 
 <script>
 function singleClick(){
